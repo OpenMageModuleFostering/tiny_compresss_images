@@ -1,24 +1,58 @@
-# Compress JPEG & PNG Images with Magento
+[<img src="https://travis-ci.org/tinify/tinify-php.svg?branch=master" alt="Build Status">](https://travis-ci.org/tinify/tinify-php)
 
-This extension automatically compresses your Magento images that are generated
-in the cache folder.
+# Tinify API client for PHP
 
-## Advantages
+PHP client for the Tinify API, used for [TinyPNG](https://tinypng.com) and [TinyJPG](https://tinyjpg.com). Tinify compresses your images intelligently. Read more at [http://tinify.com](http://tinify.com).
 
-- Your site will load faster
-- You will save bandwidth and hosting costs
-- Compression happens on-the-fly in the background
-- The extension is compatible with serving images through a CDN
-- No cron jobs or scheduled tasks needed
+## Documentation
 
-## Extended Magento Product Catalog Image from core with extra code
+[Go to the documentation for the PHP client](https://tinypng.com/developers/reference/php).
 
-Right now we have extended Mage_Catalog_Model_Product_Image method from
-Magento version 1.9.1.0 with the new Dispatch Event and changed the default JPEG
-quality to 95%.
+## Installation
 
-## Magento core feature request
+Install the API client with Composer. Add this to your `composer.json`:
 
-We have asked Magento to include the extra line of code so the function rewrite
-can be removed again. But we have not recieved any response yet.
+```json
+{
+  "require": {
+    "tinify/tinify": "*"
+  }
+}
+```
 
+Then install with:
+
+```
+composer install
+```
+
+Use autoloading to make the client available in PHP:
+
+```php
+require_once("vendor/autoload.php");
+```
+
+## Usage
+
+```php
+Tinify\setKey("YOUR_API_KEY");
+Tinify\fromFile("unoptimized.png")->toFile("optimized.png");
+```
+
+## Running tests
+
+```
+composer install
+vendor/bin/phpunit
+```
+
+### Integration tests
+
+```
+composer install
+TINIFY_KEY=$YOUR_API_KEY vendor/bin/phpunit --no-configuration test/integration.php
+```
+
+## License
+
+This software is licensed under the MIT License. [View the license](LICENSE).

@@ -1,13 +1,13 @@
 {
     "name": "OpenMageModuleFostering/Tiny_Compresss_Images",
     "type": "magento-module",
-    "license": "GPL-v2-or-later",
+    "license": "MIT-License",
     "homepage": "",
-    "description": "Speed up your webshop. Optimize your JPEG and PNG images automatically with TinyPNG. ",
+    "description": "Compress JPEG & PNG images",
     "authors": [
     {
-        "name": "TinyPNG",
-        "email": "info@tinypng.com"
+        "name": "Tiny",
+        "email": "support@tinypng.com"
     }
 ],
     "suggest": {
