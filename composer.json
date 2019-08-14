@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Tiny_Compresss_Images",
+    "type": "magento-module",
+    "license": "GPL-v2-or-later",
+    "homepage": "",
+    "description": "Speed up your webshop. Optimize your JPEG and PNG images automatically with TinyPNG. ",
+    "authors": [
+    {
+        "name": "TinyPNG",
+        "email": "info@tinypng.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
