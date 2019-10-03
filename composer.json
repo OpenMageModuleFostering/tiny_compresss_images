@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Tiny_Compresss_Images",
+    "name": "OpenMageModuleFostering\/Tiny_Compresss_Images",
     "type": "magento-module",
     "license": "MIT-License",
     "homepage": "",
     "description": "Compress JPEG & PNG images",
     "authors": [
-    {
-        "name": "Tiny",
-        "email": "support@tinypng.com"
-    }
-],
+        {
+            "name": "Tiny",
+            "email": "support@tinypng.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
